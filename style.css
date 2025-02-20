@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Colonnes */
+  .column {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Colonne de gauche : catégories */
+  .left-column {
+    width: 20%;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  /* Colonne du milieu : tâches */
+  .middle-column {
+    flex: 1;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  /* Colonne de droite : détails de la tâche */
+  .right-column {
+    width: 40%;
+  }
+  
+  /* Header de colonne */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* Boutons */
+  button {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    padding: 10px 15px;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+  }
+  
+  .add-slot-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #1976d2;
+    cursor: pointer;
+  }
+  
+  /* Inputs et Textareas */
+  input[type="text"],
+  textarea {
+    width: 100%; /* Réduction de la largeur */
+    max-width: 100%; /* Empêche le débordement */
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: border-box; /* Assure que la largeur inclut le padding et la bordure */
+    }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Listes */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Items de liste (catégories et tâches) */
+  li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+  
+  li:hover, li.selected {
+    background-color: #e3f2fd;
+  }
+  
+  /* Bouton de suppression pour les items */
+  .delete-btn, .delete-category-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 12px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  li:hover .delete-btn, li:hover .delete-category-btn {
+    display: block;
+  }
+  
+  /* Zone d'édition de la tâche */
+  .task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  

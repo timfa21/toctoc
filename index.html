@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestionnaire de Tâches</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Intégration de la police Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Colonne de gauche : Catégories -->
+  <div class="column left-column">
+    <div class="header">
+      <h2>Catégories</h2>
+      <button id="addCategorySlot" class="add-slot-btn">+</button>
+    </div>
+    <ul id="category-list">
+      <!-- Les catégories seront affichées ici -->
+    </ul>
+  </div>
+
+  <!-- Colonne du milieu : Liste des tâches -->
+  <div class="column middle-column">
+    <h2>Tâches</h2>
+    <!-- Saisir le nom de la tâche et appuyer sur Entrée pour l'ajouter -->
+    <input type="text" id="newTaskName" placeholder="Nom de la tâche et appuyez sur Entrée">
+    <ul id="task-list">
+      <!-- Les tâches de la catégorie sélectionnée s'afficheront ici -->
+    </ul>
+  </div>
+
+  <!-- Colonne de droite : Détail et modification de la tâche -->
+  <div class="column right-column">
+    <h2>Détails de la tâche</h2>
+    <div class="task-details">
+      <input type="text" id="edit-task-name" placeholder="Nom de la tâche">
+      <textarea id="edit-task-desc" placeholder="Description de la tâche"></textarea>
+      <button id="saveTaskChanges">Enregistrer les modifications</button>
+    </div>
+  </div>
+  <script src="js/renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "toctoc",
+  "version": "0.0.1",
+  "description": "Tasks manager",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timfa21/toctoc.git"
+  },
+  "author": "Timothée FAURE et Mathieu BERTEAU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timfa21/toctoc/issues"
+  },
+  "homepage": "https://github.com/timfa21/toctoc#readme",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}

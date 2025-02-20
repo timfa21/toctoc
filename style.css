@@ -24,6 +24,53 @@ body {
     width: 20%;
     border-right: 1px solid #e0e0e0;
   }
+
+  .filter-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-item, .category-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filter-item:hover, .category-item:hover,
+  .filter-item.selected, .category-item.selected {
+    background-color: #e3f2fd;
+  }
+  
+  .add-slot-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #1976d2;
+    cursor: pointer;
+  }
+  
+  hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  
   
   /* Colonne du milieu : tâches */
   .middle-column {
@@ -41,15 +88,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header h2 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
+}
+
   /* Boutons */
   button {
     background-color: #1976d2;
@@ -88,8 +128,8 @@ body {
     }
   
   textarea {
-    resize: vertical;
-    min-height: 100px;
+    resize: none;
+    height: 60vh;
   }
   
   /* Listes */
@@ -128,12 +168,13 @@ body {
     font-size: 12px;
     display: none;
     cursor: pointer;
-  }
-  
-  li:hover .delete-btn, li:hover .delete-category-btn {
+}
+
+.category-item .delete-category-btn,
+li .delete-btn {
     display: block;
-  }
-  
+}
+
   /* Zone d'édition de la tâche */
   .task-details {
     display: flex;

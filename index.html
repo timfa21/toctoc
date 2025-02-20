@@ -8,16 +8,33 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Colonne de gauche : Catégories -->
-  <div class="column left-column">
+  <!-- Colonne de gauche : Filtres et Catégories -->
+<div class="column left-column">
+  <!-- Bloc Tri par date -->
+  <div class="filter-section">
+    <h2>Tri par date</h2>
+    <ul id="date-filter-list">
+      <li class="filter-item" data-filter="all">Tout</li>
+      <li class="filter-item" data-filter="day">Jour</li>
+      <li class="filter-item" data-filter="week">Semaine</li>
+    </ul>
+  </div>
+
+  <!-- Bloc Catégories -->
+  <div class="filter-section">
     <div class="header">
       <h2>Catégories</h2>
       <button id="addCategorySlot" class="add-slot-btn">+</button>
     </div>
     <ul id="category-list">
-      <!-- Les catégories seront affichées ici -->
+      <!-- Les catégories chargées -->
+    </ul>
+    <hr>
+    <ul id="special-category">
+      <!-- Catégorie spéciale "Terminées" -->
     </ul>
   </div>
+</div>
 
   <!-- Colonne du milieu : Liste des tâches -->
   <div class="column middle-column">
@@ -31,9 +48,9 @@
 
   <!-- Colonne de droite : Détail et modification de la tâche -->
   <div class="column right-column">
-    <h2>Détails de la tâche</h2>
+    <!-- Le titre devient l’affichage du nom de la tâche avec un id pour pouvoir y accéder -->
+    <h2 id="taskTitle">Détails de la tâche</h2>
     <div class="task-details">
-      <input type="text" id="edit-task-name" placeholder="Nom de la tâche">
       <textarea id="edit-task-desc" placeholder="Description de la tâche"></textarea>
       <button id="saveTaskChanges">Enregistrer les modifications</button>
     </div>

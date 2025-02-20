@@ -1,8 +1,23 @@
 [
   {
-    "name": "oui",
-    "description": "pas comme ça",
+    "name": "Pourquoi pas",
+    "description": "",
     "category": "Loisir",
+    "date": "2025-02-20T17:33:48.158Z",
+    "completed": false
+  },
+  {
+    "name": "Tâche 3",
+    "description": "",
+    "category": "Loisir",
+    "date": "2025-02-20T17:34:14.076Z",
+    "completed": true
+  },
+  {
+    "name": "Tâche 2",
+    "description": "",
+    "category": "À faire",
+    "date": "2025-02-20T17:40:57.674Z",
     "completed": false
   }
 ]
